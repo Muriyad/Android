@@ -1,57 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="2000px"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent"
+    android:padding="20dp">
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        ></androidx.recyclerview.widget.RecyclerView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tableView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25sp" />
-
-            <ImageView
-                android:id="@+id/s"
-                android:layout_width="match_parent"
-                android:layout_height="217dp"
-                app:srcCompat="@drawable/zugpsitze_mountain"
-                tools:srcCompat="@drawable/Zugpsitze_mountain" />
-
-            <ImageView
-                android:id="@+id/s1"
-                android:layout_width="match_parent"
-                android:layout_height="217dp"
-                app:srcCompat="@drawable/download"
-                tools:srcCompat="@drawable/download" />
-
-            <ImageView
-                android:id="@+id/s2"
-                android:layout_width="match_parent"
-                android:layout_height="217dp"
-                app:srcCompat="@drawable/river"
-                tools:srcCompat="@drawable/river" />
-
-            <ImageView
-                android:id="@+id/s3"
-                android:layout_width="match_parent"
-                android:layout_height="217dp"
-                app:srcCompat="@drawable/dog"
-                tools:srcCompat="@drawable/dog" />
-        </LinearLayout>
-
-    </ScrollView>
-
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
